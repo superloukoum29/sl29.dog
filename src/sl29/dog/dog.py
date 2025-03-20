@@ -41,20 +41,20 @@ class Dog:
     @property
     def sex(self) -> str:
         """
-        DOCSTRINGS A COMPLETER
+        Retourne le sex du chien.
         """
         return self._sex
 
     @property
     def name(self) -> str:
         """
-        DOCSTRINGS A COMPLETER
+        Retourne le nom du chien.
         """
         return self._name
 
     def __str__(self) -> str:
         """
-        DOCSTRINGS A COMPLETER
+        Afficher les info du chien
         """
         return f"Chien: {self.name}, Race: {self._race}, Sexe: {self._sex}"
 
