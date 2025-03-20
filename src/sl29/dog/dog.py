@@ -27,9 +27,36 @@ class Dog:
             sex (str): Le sexe du chien ('M' ou 'F').
             name (str, optional): Le nom du chien. Par défaut, une chaîne vide.
         """
-        self.race = race
-        self.sex = sex
+        self._race = race
+        self._sex = sex
         self.name = name
 
-if __name__ == "__main__":
-    pass
+    @property
+    def race(self) -> str:
+        """
+        Retourne la race du chien.
+        """
+        return self._race
+
+    @property
+    def sex(self) -> str:
+        """
+        DOCSTRINGS A COMPLETER
+        """
+        return self._sex
+
+    @property
+    def name(self) -> str:
+        """
+        DOCSTRINGS A COMPLETER
+        """
+        return self._name
+
+    def __str__(self) -> str:
+        """
+        DOCSTRINGS A COMPLETER
+        """
+        return f"Chien: {self.name}, Race: {self._race}, Sexe: {self._sex}"
+
+    if __name__ == "__main__":
+        pass
